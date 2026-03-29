@@ -1,11 +1,15 @@
 {
-  "publisher": "local",
+  "publisher": "JezzWTF",
   "name": "package-scripts-sorter",
   "displayName": "Package Scripts Sorter",
   "description": "Detects unsorted scripts in package.json and offers to sort them alphabetically",
   "version": "0.1.1",
   "engines": {
     "vscode": "^1.85.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JezzWTF/package-scripts-sorter"
   },
   "categories": ["Other"],
   "activationEvents": ["onLanguage:json"],
