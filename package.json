@@ -1,0 +1,33 @@
+{
+  "publisher": "local",
+  "name": "package-scripts-sorter",
+  "displayName": "Package Scripts Sorter",
+  "description": "Detects unsorted scripts in package.json and offers to sort them alphabetically",
+  "version": "0.1.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": ["onLanguage:json"],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "packageScriptsSorter.sortScripts",
+        "title": "Sort package.json Scripts Alphabetically"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.3.0",
+    "@vscode/vsce": "^2.22.0"
+  }
+}
